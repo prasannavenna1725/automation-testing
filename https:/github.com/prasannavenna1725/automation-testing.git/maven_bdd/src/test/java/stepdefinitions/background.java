@@ -12,7 +12,7 @@ public class background {
 public void testcase1() {
     // Write code here that turns the phrase above into concrete actions
    // throw new io.cucumber.java.PendingException();
-	System.out.println("testcase1");
+	System.out.println("test1");
 }
 
 @When("testcase2")

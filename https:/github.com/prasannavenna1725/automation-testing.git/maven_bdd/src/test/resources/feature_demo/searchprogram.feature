@@ -1,4 +1,4 @@
-#Author:prasanna
+
 
 Feature: homepage_search
 Scenario: validate google search is working

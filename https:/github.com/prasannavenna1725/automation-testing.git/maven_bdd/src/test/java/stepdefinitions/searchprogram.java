@@ -23,7 +23,7 @@ public class searchprogram {
 	@Given("user is on google search page")
 	public void user_is_on_google_search_page() {
 		
-		driver.navigate().to("https://www.google.com");
+		driver.navigate().to("https://www.google.com/");
 	    // Write code here that turns the phrase above into concrete actions
 	   // throw new io.cucumber.java.PendingException();
 	}
@@ -34,7 +34,8 @@ public class searchprogram {
 		driver.findElement(By.name("q")).sendKeys("India");
 		
 		driver.findElement(By.name("q")).sendKeys(Keys.ENTER);
-		
+		 
+		Thread.sleep(3000);
 	    // Write code here that turns the phrase above into concrete actions
 	    //throw new io.cucumber.java.PendingException();
 	}
