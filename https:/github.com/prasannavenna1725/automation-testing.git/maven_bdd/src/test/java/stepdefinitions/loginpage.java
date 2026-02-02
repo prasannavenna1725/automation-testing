@@ -12,9 +12,6 @@ public class loginpage {
 	
 	WebDriver driver;
 	
-	
-	
-	
 	@Given("browser1 is login")
 	public void browser1_is_open()
 	{
@@ -23,8 +20,6 @@ public class loginpage {
 		driver.navigate().to("https://www.saucedemo.com/");
 		
 	}
-
-	
 	@When("enter login details<username> and <password>")
 	public void enter_login_details_username_and_password() {
 		driver.findElement(By.name("user-name")).sendKeys("username");
@@ -32,9 +27,6 @@ public class loginpage {
 		driver.findElement(By.name("login-button")).click();
 	    // Write code here that turns the phrase above into concrete actions
 	    //throw new io.cucumber.java.PendingException();
-	
-
-	
 	}
 
 	@Then("page is navigated to website")

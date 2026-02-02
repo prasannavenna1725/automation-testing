@@ -13,21 +13,23 @@ public class demo_excel {
 	{
 		
 		
-String prjpath = System.getProperty("user.dir");
+//String prjpath = System.getProperty("user.dir");
+		String prjpath = "/home/labuser/Desktop/Project/excel_venna.xlsx";
 FileInputStream fis = new FileInputStream("/home/labuser/Desktop/Project/excel_venna.xlsx");
 XSSFWorkbook v = new XSSFWorkbook(fis);
 XSSFSheet sheet = v.getSheet("sheet1");
 
 System.out.println(sheet.getLastRowNum());
-System.out.println(sheet.getRow(3).getCell(0).getStringCellValue());
-//System.out.println(sheet.getRow(1).getCell(1).getStringCellValue());
-sheet.getRow(4).createCell(2).setCellValue("Fail");
+//System.out.println(sheet.getRow(2).getCell(0).getStringCellValue());
+//stem.out.println(sheet.getRow(1).getCell(1).getStringCellValue());
+sheet.getRow(1).createCell(2).setCellValue("sai");
 
+fis.close();
 
 FileOutputStream fout = new FileOutputStream(prjpath + "/home/labuser/Desktop/Project/excel_venna.xlsx");
 v.write(fout);
+fout.close();
 v.close();
-
 
 
 
